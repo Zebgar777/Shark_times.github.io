@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.cls-1 {
+  animation: colorChange 3s linear infinite;
+}
+
+.cls-5 {
+  animation: colorChangeCircle 3s linear infinite, scaleCircle 3s ease-in-out infinite;
+}
+
+@keyframes colorChange {
+  0%, 100% {
+    fill: #1c75bc;
+  }
+  50% {
+    fill: #00aeef;
+  }
+}
+
+@keyframes colorChangeCircle {
+  0%, 100% {
+    fill: #1c75bc;
+  }
+  50% {
+    fill: #00aeef;
+  }
+}
+
+@keyframes scaleCircle {
+  0%, 100% {
+    r: 96.7; 
+  }
+  50% {
+    r: 110; 
+  }
+}
